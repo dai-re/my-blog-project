@@ -1,0 +1,54 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  link_list: any;
+  text_list: string;
+  type: string;
+}
+const { link_list, text_list, type } = Astro.props;
+---
+
+{
+  type === "facebook" && (
+    <li>
+      <a href={link_list}>
+        <Icon name="brand-facebook" />
+      </a>
+    </li>
+  )
+}
+{
+  type === "twitter" && (
+    <li>
+      <a href={link_list}>
+        <Icon name="brand-twitter" />
+      </a>
+    </li>
+  )
+}
+{
+  type === "instagram" && (
+    <li>
+      <a href={link_list}>
+        <Icon name="brand-instagram" />
+      </a>
+    </li>
+  )
+}
+{
+  type === "telegram" && (
+    <li>
+      <a href={link_list}>
+        <Icon name="brand-telegram" />
+      </a>
+    </li>
+  )
+}
+{
+  type === "text" && (
+    <li>
+      <a href={link_list}>{text_list}</a>
+    </li>
+  )
+}

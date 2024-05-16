@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import BaseLink from "./BaseLink.astro";
+import MyImage from "../image/cat-poly.jpeg";
+import { TITLE } from "../seo";
+import BaseTag from "./BaseTag.astro";
+---
+
+<side class="pr-4 pt-4 flex-col gap-4 hidden sm:flex">
+  <div
+    class="container bg-white rounded-md max-w-[590px] h-auto flex flex-col justify-center p-4"
+  >
+    <Image
+      src={MyImage}
+      width={80}
+      alt="profile"
+      class="flex m-auto rounded-full mt-8"
+    />
+    <h2 class="text-2xl font-bold text-center">{TITLE}</h2>
+    <br />
+    <ul class="flex items-center gap-2 justify-center">
+      <li><sub>Photografer</sub></li>
+      <li><sub>Programer</sub></li>
+    </ul>
+    <hr class="my-2" />
+    <ul class="flex items-center justify-center gap-2">
+      <BaseLink link_list="/" text_list="" type="facebook" />
+      <BaseLink link_list="/" text_list="" type="twitter" />
+      <BaseLink link_list="/" text_list="" type="instagram" />
+      <BaseLink link_list="/" text_list="" type="telegram" />
+    </ul>
+  </div>
+  <div
+    class="container bg-white rounded-md max-w-[590px] felx flex-col justify-center p-4"
+  >
+    <ul class="grid grid-cols-3 gap-2">
+      <BaseTag />
+      <BaseTag />
+      <BaseTag />
+      <BaseTag />
+    </ul>
+  </div>
+</side>
+<style>
+  li {
+    @apply text-xs;
+  }
+  li > sub::before {
+    content: "#";
+  }
+</style>

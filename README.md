@@ -18,6 +18,21 @@ Blog ini akan memiliki 5 ( lima ) halaman yaitu.
 4. Contact page yang menyediakan formulir kontak untuk berkomunikasi dengan pemilik blog,
 5. 404 page yang tampil saat pengunjung mencoba mengakses halaman yang tidak ditemukan atau rusak.
 
-![structure](./structure.svg)
+![structure](./image-doc/structure.svg)
 
 ---
+
+## Selesai dan dikerjakan
+
+- [x] Home Page
+- [ ] Post Page
+- [ ] About Page
+- [ ] Contact Page
+- [ ] 404 Page
+- [ ] Markdown Post
+- [ ] Mebuat semua konten dinamis
+
+
+1. Home Page
+
+![home page](./image-doc/project.png)
