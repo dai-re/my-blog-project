@@ -26,13 +26,16 @@ Blog ini akan memiliki 5 ( lima ) halaman yaitu.
 
 - [x] Home Page
 - [ ] Post Page
-- [ ] About Page
+- [x] About Page
 - [ ] Contact Page
 - [ ] 404 Page
 - [ ] Markdown Post
 - [ ] Mebuat semua konten dinamis
 
-
 1. Home Page
 
 ![home page](./image-doc/project.png)
+
+2. About Page
+
+![about page](./image-doc/tentang.png)
