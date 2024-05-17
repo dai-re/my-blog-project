@@ -1,0 +1,28 @@
+---
+import { Icon } from "astro-icon/components";
+import MainLayout from "./MainLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<MainLayout title_page={frontmatter.title}>
+  <div class="post prose m-4 !mr-0 p-4 bg-white rounded-md">
+    <slot />
+    <hr />
+    <span class="flex items-center gap-2"
+      ><Icon name="clock-hour-1" /> Diunggah pada: <i>{frontmatter.date}</i
+      ></span
+    >
+    <span class="flex items-center gap-2"
+      ><Icon name="at" />Oleh: <i>{frontmatter.admin}</i></span
+    >
+  </div>
+</MainLayout>
+
+<style is:global>
+  .post {
+    @apply max-w-full;
+  }
+  .post > p > img {
+    @apply mt-0 rounded-md;
+  }
+</style>

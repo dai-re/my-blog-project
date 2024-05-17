@@ -4,11 +4,13 @@ import { TITLE } from "../seo";
 ---
 
 <nav class="flex items-center gap-3 bg-white px-8 w-full h-14">
-  <Icon name="paw" font-size={25} />
-  <h2 class="text-xl font-bold">{TITLE}</h2>
+  <a href="/" class="flex items-center">
+    <Icon name="paw" font-size={25} />
+    <h2 class="text-xl font-bold">{TITLE}</h2>
+  </a>
   <ul class="flex items-center gap-1">
     <li>
-      <a href="/">Tentang</a>
+      <a href="/tentang">Tentang</a>
     </li>
     <li><a href="/">Kontak</a></li>
   </ul>

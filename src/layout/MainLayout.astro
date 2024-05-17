@@ -5,6 +5,11 @@ import BaseNavbar from "../components/BaseNavbar.astro";
 import BaseSide from "../components/BaseSide.astro";
 import { TITLE } from "../seo";
 import "./global.css";
+
+interface Props {
+  title_page: string;
+}
+const { title_page } = Astro.props;
 ---
 
 <html lang="en">
@@ -13,7 +18,7 @@ import "./global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>{TITLE}</title>
+    <title>{TITLE} | {title_page}</title>
   </head>
   <body class="bg-gray-200">
     <BaseNavbar />
@@ -33,6 +38,6 @@ import "./global.css";
   }
   section {
     width: 100%;
-    min-height: calc(100vh - 56px - 56px);
+    min-height: calc(100vh - 56px - 224px);
   }
 </style>
